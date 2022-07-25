@@ -1,9 +1,11 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 2%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #DEDFE1;
 }
 
 a {
@@ -22,5 +24,9 @@ a {
   body {
     color: white;
     background: black;
+  }
+
+  .button{
+    text-decoration:none;display:inline-block;text-align:center;padding:0.75575rem 1.3rem;font-size:0.925rem;line-height:1.5;border-radius:0.35rem;color:#ffffff;background-color:#50CD89;border:0px;margin-right:0.75rem!important;font-weight:600!important;outline:none!important;vertical-align:middle
   }
 }

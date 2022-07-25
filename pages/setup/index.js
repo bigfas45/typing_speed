@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
-import '../styles/Home.module.css';
+import '../../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -28,16 +27,8 @@ export default function Home() {
         />
       </Head>
 
-      <div
-        data-kt-name="metronic"
-        id="kt_body"
-        className="app-blank app-blank bgi-size-cover bgi-position-center bgi-no-repeat"
-      >
-        <div
-          className="d-flex flex-column flex-root"
-          id="kt_app_root"
-          style={{ backgroundImage: "url('/assets/media/auth/bg8.jpg')" }}
-        >
+      <div className="container">
+        <div className="d-flex flex-column flex-root" id="kt_app_root">
           <div className="d-flex flex-column flex-center flex-column-fluid">
             <div className="d-flex flex-column flex-center text-center p-10">
               <div className="card card-flush w-md-650px py-5">
@@ -74,29 +65,13 @@ export default function Home() {
                       alt=""
                     />
                   </div>
-                  <div className="columns">
-                    <div className="column">
-                      <Link
-                        href={{
-                          pathname: '/start',
-                          query: { slug: 'default' },
-                        }}
-                        className="btn btn-primary"
-                      >
-                        Default Setup
-                      </Link>
-                    </div>
-                    <div className="column">
-                      <Link
-                        href={{
-                          pathname: '/start',
-                          query: { slug: 'custom' },
-                        }}
-                        className="btn btn-info"
-                      >
-                        Custom Setup
-                      </Link>
-                    </div>
+                  <div className="mb-0">
+                    <a
+                      href="https://preview.keenthemes.com/metronic8/demo1/index.html"
+                      className="btn btn-sm btn-primary"
+                    >
+                      Go To Dashboard
+                    </a>
                   </div>
                 </div>
               </div>
